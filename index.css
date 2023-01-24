@@ -1,5 +1,65 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Heebo, sans-serif;
+    font-family: Heebo;
 }
+.btn_text {
+    color: white;
+    text-decoration: none;
+}
+#home_view {
+    width: 100%;
+}
+#comp_nav_placeholder {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0 auto;
+}
+#mob_nav_placeholder {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+#layerOne_background {
+    background-image: url("images/L1Bg.png");
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+}
+#layerOne_header {
+    margin-left: 4vw;
+    width: 62vw;
+    height: 12vh;
+}
+#comp_video_placeholder {
+    background-image: url("images/videoLoop.gif");
+    background-size: cover;
+    width: 100%;
+    height: 75vh;
+}
+#video_text {
+    width: 38%;
+    color: white;
+    padding: 9vh 4vw;
+}
+#sm_header {
+    font-size: 18px;
+    margin: 10px 0;
+}
+#lg_header {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 30px;
+}
+#video_btn {
+    margin: 35px 0;
+    background-color: inherit;
+    border: 1px solid white;
+    border-radius: 25px;
+    width: 17vw;
+    height: 4vh;
+}
+
+
