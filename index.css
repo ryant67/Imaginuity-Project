@@ -10,19 +10,29 @@ body {
 #home_view {
     width: 100%;
 }
+
+/*Hidden Mobile Views*/
+#mob_nav_placeholder {
+    display: none;
+}
+#mob_drawer {
+    display: none;
+}
+
+/*Desktop Views*/
 #comp_nav_placeholder {
+    background-image: url("images/compNav.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 10vh;
     position: fixed;
     top: 0;
-    width: 100%;
     margin: 0 auto;
-}
-#mob_nav_placeholder {
-    visibility: hidden;
-    height: 0;
-    width: 0;
 }
 #layerOne_background {
     background-image: url("images/L1Bg.png");
+    margin-top: 10vh;
     display: flex;
     align-items: center;
     width: 100%;
@@ -36,8 +46,8 @@ body {
 #comp_video_placeholder {
     background-image: url("images/videoLoop.gif");
     background-size: cover;
-    width: 100%;
-    height: 75vh;
+    width: 100vw;
+    height: 90vh;
 }
 #video_text {
     width: 38%;
@@ -58,8 +68,48 @@ body {
     background-color: inherit;
     border: 1px solid white;
     border-radius: 25px;
-    width: 17vw;
-    height: 4vh;
+    padding: .75vh 3vw;
 }
-
-
+#layerThree {
+    width: 100%;
+    height: 85.5vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+#layerThree_info {
+    background-image: url("images/L3Limg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50vw;
+}
+#layerThree_infoText {
+    width: 100%;
+    color: white;
+    padding: 8vh 2.75vw;
+}
+#layerThree_smHeader {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+#layerThree_lgHeader {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 30px;
+}
+#layerThree_body {
+    width: 80%;
+    margin: 20px 0;
+    font-size: 14px;
+}
+#layerThree_btn {
+    background-color: inherit;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: .75vh 2vw;
+}
+#layerThree_img_placeholder {
+    background-image: url("images/L3Rimg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50vw;
+}
