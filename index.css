@@ -13,14 +13,6 @@ body {
     text-decoration: none;
 }
 
-/*Hidden Mobile Views*/
-#mob_nav_placeholder {
-    display: none;
-}
-#mob_drawer {
-    display: none;
-}
-
 /*Desktop Views*/
 #comp_nav_placeholder {
     background-image: url("images/compNav.png");
@@ -39,7 +31,7 @@ body {
     display: flex;
     margin-top: 70px;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     height: 200px;
 }
 #layerOne_header {
@@ -184,12 +176,6 @@ body {
     background-size: contain;
     width: 50%;
 }
-#layerFive_rightText {
-    width: 85%;
-    color: white;
-    padding: 8vh 2.75vw;
-    text-align: end;
-}
 #layerFive_rightSmHeader {
     font-size: 18px;
 }
@@ -262,28 +248,314 @@ body {
     font-size: 30px;
     font-weight: bold;
 }
-#layerSeven_body {
-    margin: 20px auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-#layerSeven_leftBody {
-    font-size: 13px;
-    width: 32%;
-}
-#layerSeven_middleBody {
-    font-size: 13px;
-    width: 32%;
-}
-#layerSeven_rightBody {
-    font-size: 13px;
-    width: 32%;
-}
 #layerSeven_btn {
     background-color: inherit;
     border: 1px solid white;
     border-radius: 25px;
     padding: .75vh 2.5vw;
     margin-top: 10px;
+}
+
+@media (max-width: 1280px) and (min-width: 376px) {
+    #mob_drawer {
+        display: none;
+    }
+    #mob_nav_placeholder {
+        display: none;
+    }
+    #layerFive_rightText {
+        width: 85%;
+        color: white;
+        padding: 8vh 2.75vw;
+        text-align: end;
+    }
+    #layerSeven_body {
+        margin: 20px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #layerSeven_leftBody {
+        font-size: 13px;
+        width: 32%;
+    }
+    #layerSeven_middleBody {
+        font-size: 13px;
+        width: 32%;
+    }
+    #layerSeven_rightBody {
+        font-size: 13px;
+        width: 32%;
+    }
+}
+
+@media (max-width: 375px) {
+    #comp_nav_placeholder {
+        display: none;
+    }
+    #mob_nav_placeholder {
+        background-image: url("images/mobNav.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 56px;
+        position: fixed;
+        top: 0px;
+        margin: 0 auto;
+    }
+    #layerOne_background {
+        background-image: url("images/L1Bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        margin-top: 56px;
+        align-items: center;
+        width: 100%;
+        height: 120px;
+    }
+    #layerOne_header {
+        margin-left: 4vw;
+        width: 62vw;
+        height: 6vh;
+    }
+    #comp_video_placeholder {
+        background-image: url("images/videoLoop.gif");
+        background-repeat: no-repeat;
+        background-size: 100% 70vh;
+        height: 70vh;
+    }
+    #video_text {
+        width: 75%;
+        color: white;
+        padding: 5vh 3vw;
+    }
+    #sm_header {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+    #lg_header {
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 30px;
+    }
+    #video_btn {
+        font-size: 11px;
+        margin: 25px 0;
+        background-color: inherit;
+        border: 1px solid white;
+        border-radius: 25px;
+        padding: .75vh 3vw;
+    }
+    #mob_drawer {
+        height: 56px;
+    }
+    #layerThree {
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #layerThree_info {
+        background-image: url("images/L3Limg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+    }
+    #layerThree_infoText {
+        width: 90%;
+        margin: auto;
+        color: white;
+        padding: 8vh 0;
+    }
+    #layerThree_smHeader {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    #layerThree_lgHeader {
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 30px;
+    }
+    #layerThree_body {
+        width: 90%;
+        margin: 20px 0;
+        font-size: 12px;
+    }
+    #layerThree_btn {
+        background-color: inherit;
+        border: 1px solid white;
+        border-radius: 25px;
+        padding: .75vh 5vw;
+    }
+    #layerThree_img_placeholder {
+        display: none;
+    }
+    #layerFour {
+        background-image: url("images/L4Bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 280px;
+        display: flex;
+        align-items: center;
+        padding-left: 2.75vw;
+    }
+    #layerFour_text {
+        color: white;
+    }
+    #layerFour_lgHeader {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    #layerFour_smHeader {
+        font-size: 12px;
+        font-weight: bold;
+        margin: 10px 0 20px 0;
+    }
+    #layerFour_btn {
+        background-color: inherit;
+        border: 1px solid white;
+        border-radius: 25px;
+        padding: .75vh 5vw;
+    }
+    #layerFive {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #layerFive_leftBackground {
+        background-image: url("images/L5Limg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;
+        height: 60vh;
+    }
+    #layerFive_leftText {
+        width: 90%;
+        margin: auto;
+        color: white;
+        padding: 6vh 0;
+    }
+    #layerFive_leftSmHeader {
+        font-size: 16px;
+    }
+    #layerFive_leftLgHeader {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    #layerFive_leftBody {
+        font-size: 12px;
+        width: 95%;
+        margin: 10px 0 20px 0;
+    }
+    #layerFive_leftBtn {
+        background-color: inherit;
+        border: 1px solid white;
+        border-radius: 25px;
+        padding: .75vh 5vw;
+    }
+    #layerFive_rightBackground {
+        background-image: url("images/L5Rimg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;
+        height: 60vh;
+    }
+    #layerFive_rightText {
+        width: 90%;
+        margin: auto;
+        color: white;
+        padding: 6vh 0;
+    }
+    #layerFive_rightSmHeader {
+        font-size: 16px;
+    }
+    #layerFive_rightLgHeader {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    #layerFive_rightBody{
+        font-size: 12px;
+        width: 95%;
+        margin: 10px 0 20px 0;
+    }
+    #layerFive_rightBtn {
+        background-color: inherit;
+        border: 1px solid white;
+        border-radius: 25px;
+        padding: .75vh 5vw;
+    }
+    #layerSix_header {
+        width: 98%;
+        margin: 10vh auto 5vh auto;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        color: #004d89;
+    }
+    #layerSix_list {
+        flex-wrap: wrap;
+    }
+    .layerSix_listItems:nth-child(2) > img {
+        height: 180px;
+    }
+    .layerSix_listItems:nth-child(6) > img {
+        height: 174px;
+    }
+    .layerSix_listItems > img {
+        height: 160px;
+        width: 130px;
+        margin-bottom: 25px;
+    }
+    #layerSix_btnText {
+        color: #004d89;
+        text-decoration: none;
+    }
+    #layerSix_btn {
+        background-color: inherit;
+        border: 1px solid #004d89;
+        border-radius: 25px;
+        padding: .75vh 2.5vw;
+        margin: auto auto 6vh auto;
+    }
+    #layerSeven {
+        background-image: url("images/L7Bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 4vw;
+        color: white;
+    }
+    #layerSeven_smHeader {
+        font-size: 16px;
+    }
+    #layerSeven_lgHeader {
+        font-size: 24px;
+        font-weight: bold;
+        width: 60%;
+    }
+    #layerSeven_body {
+        margin: 20px auto;
+    }
+    #layerSeven_leftBody {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    #layerSeven_middleBody {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    #layerSeven_rightBody {
+        font-size: 12px;
+    }
+    #layerSeven_btn {
+        background-color: inherit;
+        border: 1px solid white;
+        border-radius: 25px;
+        padding: .75vh 2.5vw;
+        margin-top: 10px;
+    }
 }
