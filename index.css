@@ -71,7 +71,7 @@ body {
 }
 #layerThree {
     width: 100%;
-    height: auto;
+    height: 553px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -80,7 +80,6 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     width: 50%;
-    height: 553px;
 }
 #layerThree_infoText {
     width: 100%;
@@ -112,7 +111,6 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     width: 50%;
-    height: 553px;
 }
 #layerFour {
     background-image: url("images/L4Bg.png");
@@ -142,7 +140,7 @@ body {
 }
 #layerFive {
     width: 100%;
-    height: auto;
+    height: 553px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -151,7 +149,6 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     width: 50%;
-    height: 553px;
 }
 #layerFive_leftText {
     width: 100%;
@@ -181,7 +178,6 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     width: 50%;
-    height: 553px;
 }
 #layerFive_rightText {
     width: 85%;
@@ -205,4 +201,20 @@ body {
     border: 1px solid white;
     border-radius: 25px;
     padding: .75vh 2.5vw;
+}
+#layerSix_header {
+    width: 98%;
+    margin: 10vh auto 5vh auto;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #f89e25;
+}
+#layerSix_list {
+    width: 98%;
+    padding: 0;
+    margin: auto;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
 }
